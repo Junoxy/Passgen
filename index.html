@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PassGen</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="title"> Password Generator</div>
+    <div class="gen-window">
+        <div class="gen-pass"></div>
+        <div class="copy-pass">
+            <button class="copy-pass-button">
+                <img src="/public/copy-icon.svg" alt="copy icon">
+            </button>
+        </div>
+    </div>
+    <div class="card">
+        <div class="card-content-container">
+            <div class="char-length">
+                <div class="slider-container">
+                    <div class="char-length-title">Character Length</div>
+                    <input class="char-length-slider" type="range" min="5" max="24" value="0" step="1">
+                </div>
+                <div class="char-length-number">5</div>
+            </div>
+            
+            <div>
+                <div class="check-container">
+                    <input type="checkbox" id="check-uppercase" class="checkboxes">
+                    <label for="check-uppercase" class="custom-checkboxes"></label>
+                    <div class="check-text">Include Uppercase Letters</div>
+                </div>
+                <div class="check-container">
+                    <input type="checkbox" id="check-lowercase" class="checkboxes">
+                    <label for="check-lowercase" class="custom-checkboxes"></label>
+                    <div class="check-text">Include Lowercase Letters</div>
+                </div>
+                <div class="check-container">
+                    <input type="checkbox" id="check-numbers" class="checkboxes">
+                    <label for="check-numbers" class="custom-checkboxes"></label>
+                    <div class="check-text">Include Numbers</div>
+                </div>
+                <div class="check-container">
+                    <input type="checkbox" id="check-symbols" class="checkboxes">
+                    <label for="check-symbols" class="custom-checkboxes"></label>
+                    <div class="check-text">Include Symbols</div>
+                </div>
+            </div>
+            <div class="strength-checker">
+                <div class="strength-checker-title">Strength</div>
+                <div class="pass-strength-bar">
+                    <div class="current-strength">WEAK</div>
+                    <div class="strength-bar"> </div>
+                    <div class="strength-bar"> </div>
+                    <div class="strength-bar"> </div>
+                    <div class="strength-bar"> </div>
+                </div>
+            </div>
+            <div class="generate">
+                <button class="generate-password">Generate</button>
+            </div>
+        </div>
+    </div>
+    <div class="logo-techover">
+        <img src="/public/techover-logo.png" alt="techover logo">
+    </div>
+    <script src="/index.js"></script>
+</body>
+</html>
